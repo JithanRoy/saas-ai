@@ -19,7 +19,7 @@ const ConversationPage = () => {
       });
 
       const onSubmit = async (values: z.infer<typeof formSchema>) => {
-        
+        console.log(values);
       }
 
     const isLoading = form.formState.isSubmitting;
@@ -37,7 +37,7 @@ const ConversationPage = () => {
             <div>
                 <Form {...form}>
                     <form 
-                    onSubmit={form.handleSubmit(onsubmit)} 
+                    onSubmit={form.handleSubmit(onSubmit)} 
                     className="
                         rounded-lg 
                         border 
