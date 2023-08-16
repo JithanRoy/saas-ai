@@ -71,7 +71,7 @@ export default function HomePage () {
                           {tool.label}
                       </div>
                   </div>
-                  <BsArrowRight classname="w-5 h-5" />
+                  <BsArrowRight className="w-5 h-5" />
               </Card>
           ))}
       </div>
