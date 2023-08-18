@@ -3,7 +3,6 @@
 import * as z from "zod";
 import axios from "axios";
 import {Heading} from "@/components/Heading";
-import BsCodeSlash from 'react-icons/bs';
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
@@ -21,6 +20,7 @@ import { UserAvatar } from "@/components/user-avatar";
 import { Empty } from "@/components/ui/empty";
 
 import { formSchema } from "./constants";
+import { BiCodeAlt } from "react-icons/bi";
 
 const CodePage = () => {
   const router = useRouter();
@@ -56,6 +56,7 @@ const CodePage = () => {
       <Heading         
         title="Code Generation"
         description="Generate code using descriptive text."
+        Icon={BiCodeAlt}
         iconColor="text-green-700"
         bgColor="bg-green-700/10"/>
       <div className="px-4 lg:px-8">
